@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+  font-family: 'Indie Flower', cursive;
+}
+
+a{
+  color:black !important;
+  font-size: large;
+  font-weight: 600;
+
+}
+nav{
+  background: wheat;
+}
+
+.brand,h2{
+  font-family: 'Grand Hotel', cursive;
+}
+.brand{
+ position: absolute;
+ left: 20px;
+ font-size: 30px;
+color:#0314f8
+}
+.floatNav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:60px;
+  right:0px;
+  background:rgb(179, 226, 245);
+  min-width:100vw;
+  min-height: 80vh;
+  z-index: 100;
+  transition:1s;
+  color:white !important;
+} 
+.hamburger{
+   display: none !important; 
+  color:#000;
+  float: right !important;
+  padding-right: 10px;
+}
+
+.auth-card{
+  max-width: 400px;
+  height:120%;
+  text-align: center;
+  padding: 40px;
+  margin:30px auto;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid  rgb(17, 141, 223) !important;
+  box-shadow: 0 1px 0 0 rgb(17, 141, 223) !important;
+}
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid  rgb(17, 141, 223) !important;
+  box-shadow: 0 1px 0 0 rgb(17, 141, 223) !important;
+}
+.Gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.items{
+  width:30%;
+  margin:5px;
+}
+.home-card{
+  max-width:500px;
+  height:max-content;
+  margin:20px auto;
+  float: "none";
+  
+}
+
+.comments{
+  max-height: 140px;
+  border: solid 0px grey;
+  overflow-y: auto;
+  margin: 5px;
+  padding: 3px;
+}
+.comments::-webkit-scrollbar{
+  width: 0;
+}
+
+.Profile{
+  margin-left: 100px;
+  flex-wrap: wrap;
+}
+.Profileinside{
+ display: flex;
+ position: relative;
+ 
+}
+
+.storybackground{
+  position:relative;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  margin: 20px auto;
+  background:#3f729b;
+}
+.storybackground .story{
+  position:absolute;
+  top:5px;
+  left:5px;
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+  background-color:#fff;
+  background-size:cover
+}
+
+.Followreq{
+  display: flex;
+  margin:20px ;
+}
+
+.storywrapper{
+ padding-bottom: 15px;
+ margin: 5px;
+  max-height: 140px;
+  border: solid 2px grey;
+  overflow-x:auto ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.storywrapper::-webkit-scrollbar{
+  width:0;
+}
+
+.messageProfile{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: gray;
+  margin-right: 20px;
+  position: relative;
+}
+.messageProfile > img{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.ViewMessage{
+  width: 70vw;
+  height:80vh;
+  border:2px solid grey;
+  display: flex;
+  margin: 20px;
+  position: relative;
+  background: rgb(142, 250, 169);
+  flex-wrap: wrap;
+}
+
+.ViewMessage > .form{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:20px ;
+  flex-wrap: wrap;
+}
+.ViewMessage  > .form > input{
+  width:60vw;
+  height: 100%;
+  outline-width: 0px;
+  border: 2px solid rgb(135, 207, 248);
+  border-radius: 20px;
+  padding: 10px;
+  flex: 1;
+  background: #fff;
+}
+
+.MessageContainer{
+  width:70vw;
+  height:67vh;
+  border: 2px solid black;
+  position: relative;
+  margin: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #fff;
+}
+.MessageContainer::-webkit-scrollbar{
+  width: 0;
+}
+.MessageContainer > .sentMessage{
+  min-width: 50px;
+  max-width: 200px;
+  height: max-content;
+  background: #3f729b;
+  border-radius: 20px;
+  margin: 10px;
+  padding:5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+
+}
+.MessageContainer > .receivedmessage{
+  min-width: 50px;
+  max-width: 200px;
+  height: max-content;
+  background: #549b3f;
+  border-radius: 20px;
+  margin: 10px;
+  padding:5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+
+.slider{
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width:300px;
+  height: 300px;
+}
+.right-arrow{
+  position: absolute;
+  top:50%;
+  right: 32px;
+  font-size: 2rem;
+  color: #000;
+  user-select: none;
+  cursor: pointer;
+  z-index: 10;
+}
+.left-arrow{
+  position: absolute;
+  top:50%;
+  left: 32px;
+  font-size: 2rem;
+  color: #000;
+  user-select: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+
+@media (max-width:500px){
+  .hamburger{
+    display: block !important; 
+   color:#000;
+ }
+ .right{
+   display: none;
+ }
+ .Profile{
+  margin-left: 20px;
+}
+.right li a{
+  color:#fff;
+}
+.Followreq{
+  display: flex;
+  flex-direction: column;
+  margin-left:20px ;
+}
+.storybackground{
+  width:60px;
+  height:60px;
+  
+}
+.storybackground .story{
+  width:50px;
+  height:50px;
+}
+.ViewMessage > .form{
+  margin-left: 0;
+}
+}
+
+
+
+@media (max-width:290px){
+  .Profile{
+    margin-left: 3px;
+  }
+  .ViewMessage > .form{
+    margin-left: 0;
+  }
+
+}
